@@ -17,17 +17,6 @@
     "description": "Icon that toggles the floating drive corner. The mounter itself floats as a corner card.",
     "category": "System",
     "allowMultiple": false,
-    "defaultSection": "right",
-    "defaults": {
-      "pollMs": 2500
-    },
-    "schema": [
-      {
-        "key": "pollMs",
-        "type": "number",
-        "label": "Status poll interval (ms)",
-        "defaultValue": 2500
-      }
-    ]
+    "defaultSection": "right"
   }
 }

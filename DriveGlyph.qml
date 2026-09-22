@@ -27,21 +27,9 @@ Canvas {
       c.moveTo(8, 10); c.lineTo(8, 7.5); c.arc(11, 7.5, 3, Math.PI, 0);
       c.lineTo(14, 10);
       c.moveTo(11.4, 13); c.arc(11, 13.4, 1, 0, Math.PI * 2); c.fill();
-    } else if (kind === "unlock") {
-      c.rect(6, 10, 10, 8);
-      c.moveTo(8, 10); c.lineTo(8, 7.5); c.arc(11, 7.5, 3, Math.PI, 0.3);
-      c.moveTo(6.5, 13.4); c.arc(11, 13.4, 0, 0, 0); // noop keep path warm
-      c.moveTo(11.4, 13); c.arc(11, 13.4, 1, 0, Math.PI * 2); c.fill();
     } else if (kind === "eject") {
       c.moveTo(11, 4); c.lineTo(17, 12); c.lineTo(5, 12); c.closePath();
       c.moveTo(6, 15); c.lineTo(16, 15);
-    } else if (kind === "mount") {
-      c.moveTo(11, 3); c.lineTo(11, 13);
-      c.moveTo(7, 9); c.lineTo(11, 13); c.lineTo(15, 9);
-      c.moveTo(5, 16); c.lineTo(17, 16);
-    } else if (kind === "open") {
-      c.rect(4, 6, 14, 11);
-      c.moveTo(4, 6); c.lineTo(11, 11); c.lineTo(18, 6);
     } else if (kind === "power") {
       c.moveTo(11, 3); c.lineTo(11, 11);
       c.arc(11, 12, 6.5, -0.4 + Math.PI / 2, 0.4 + Math.PI * 1.5);

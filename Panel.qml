@@ -1,6 +1,5 @@
 import QtQuick
 import Quickshell
-import Quickshell.Io
 import qs.Commons
 import qs.Ui
 
@@ -19,8 +18,6 @@ Panel {
   readonly property string contentFontFamily: bar ? bar.fontFamily : Style.font.family
 
   DriveConfig { id: config }
-
-  readonly property var driveService: bar && bar.shell ? bar.shell.serviceFor("local.disk-mounter") : null
 
   function open() { root.controller.show(); }
   function toggle() { root.opened ? root.close() : root.open(); }

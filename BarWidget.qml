@@ -19,7 +19,6 @@ BarWidget {
   }
 
   readonly property var driveService: bar && bar.shell ? bar.shell.serviceFor("local.disk-mounter") : null
-  readonly property int driveCount: driveService ? driveService.visibleDrives.length : 0
   readonly property int lockedCount: driveService ? driveService.lockedCount : 0
   readonly property string summary: driveService ? String(driveService.summary) : "disk mounter"
   // Bar-themed inks, same convention as first-party widgets:

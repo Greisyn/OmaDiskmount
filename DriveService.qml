@@ -14,7 +14,6 @@ Item {
   readonly property string pluginId: (manifest && manifest.id) ? String(manifest.id) : "local.disk-mounter"
 
   DriveConfig { id: config }
-  readonly property var cfg: config
 
   // ---------------- drive state ----------------
   property var drives: []

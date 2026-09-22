@@ -2,7 +2,6 @@ pragma ComponentBehavior: Bound
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Effects
-import Quickshell
 import Quickshell.Wayland
 import qs.Commons
 import "Drives.js" as Drives
@@ -335,7 +334,7 @@ PanelWindow {
                 // secondary row: open / lock / power-off
                 Row {
                   width: parent.width; spacing: 2
-                  visible: d.mounted || (!d.locked && d.removable) || (d.isCrypto && !d.locked && d.mounted)
+                  visible: d.mounted || (!d.locked && d.removable)
                   DriveAction {
                     visible: d.mounted && d.mountpoint
                     label: "Open"
